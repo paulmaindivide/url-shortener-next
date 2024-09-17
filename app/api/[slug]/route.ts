@@ -1,6 +1,10 @@
 import { NextResponse } from 'next/server';
 
-const urlDatabase: { [key: string]: string } = {};
+let urlDatabase: { [key: string]: string } = {
+  // In a real application, you'd store these in a database
+  // For testing, you can add entries here
+  'bIRLqL': 'https://almapay.com',
+};
 
 export async function GET(request: Request, { params }: { params: { slug: string } }) {
   const { slug } = params;
@@ -13,5 +17,3 @@ export async function GET(request: Request, { params }: { params: { slug: string
     return NextResponse.json({ error: 'URL not found' }, { status: 404 });
   }
 }
-
-// End
