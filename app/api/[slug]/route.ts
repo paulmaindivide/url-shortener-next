@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-let urlDatabase: { [key: string]: string } = {
+const urlDatabase: { [key: string]: string } = {
   // In a real application, you'd store these in a database
   // For testing, you can add entries here
   'bIRLqL': 'https://almapay.com',
