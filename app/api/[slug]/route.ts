@@ -13,3 +13,5 @@ export async function GET(request: Request, { params }: { params: { slug: string
     return NextResponse.json({ error: 'URL not found' }, { status: 404 });
   }
 }
+
+// End
