@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { nanoid } from 'nanoid';
 
-let urlDatabase: { [key: string]: string } = {};
+const urlDatabase: { [key: string]: string } = {};
 
 export async function POST(request: Request) {
   const { url } = await request.json();

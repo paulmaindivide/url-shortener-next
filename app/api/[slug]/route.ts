@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-let urlDatabase: { [key: string]: string } = {};
+const urlDatabase: { [key: string]: string } = {};
 
 export async function GET(request: Request, { params }: { params: { slug: string } }) {
   const { slug } = params;
